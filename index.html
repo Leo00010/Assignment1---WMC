@@ -1,79 +1,154 @@
-<html lang="eng">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notícias Hoje</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lora&display=swap" rel="stylesheet">
+  
+<Style>
+    body {
+      font-family: 'MyCustomFont', sans-serif; /* Mantém a fonte personalizada */
+      background-color: #ffffff; 
+      color: #000000; /* Texto branco*/
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1, h2, p {
+      color: #000000; /* Letras brancas */
+    }
+
+
+    /* Título principal */
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    /* Títulos secundários */
+    h2 {
+      font-size: 1.8em;
+      margin-top: 20px;
+      border-bottom: 2px solid #000000; /* Linha abaixo dos títulos */
+      padding-bottom: 5px;
+    }
+
+    /* Parágrafo de introdução */
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    /* Ajuste de imagens lado a lado */
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap; /* Para garantir que elas se ajustem em telas menores */
+    }
+
+    .image-container figure {
+      width: 45%; /* Largura das imagens */
+      margin: 0;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave nas imagens */
+      background-color: #ffffff; /* Fundo branco para o figure */
+      padding: 10px;
+    }
+
+    .image-container img {
+      width: 100%; /* As imagens irão ocupar toda a largura do figure */
+      height: auto; /* Mantém a proporção da imagem */
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 1em;
+      font-style: italic;
+      color: #666; /* Cor mais suave para as legendas */
+    }
+
+    /* Responsividade para quando a tela for mais estreita */
+    @media (max-width: 768px) {
+      .image-container {
+        flex-direction: column; /* Alinha as imagens em coluna */
+        align-items: center;
+      }
+
+      .image-container figure {
+        width: 80%; /* Largura das figuras se a tela for pequena */
+      }
+    }
+
+    /* Áudio e vídeo */
+    audio, iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    /* Estilo de figuras */
+    figure {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    /* Estilo do GIF */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo">Notícias Hoje</div>
-    <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Mundo</a></li>
-        <li><a href="#">Política</a></li>
-        <li><a href="#">Economia</a></li>
-        <li><a href="#">Tecnologia</a></li>
-        <li><a href="#">Cultura</a></li>
-        <li><a href="#">Desporto</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <!-- Destaques -->
-    <section class="destaque">
-      <article class="principal">
-        <img src="img/destaque.jpg" alt="Notícia principal">
-        <h1>Título da Notícia Principal</h1>
-        <p>Resumo da notícia principal com imagem de fundo...</p>
-      </article>
-      <aside class="secundarias">
-        <article>
-          <img src="img/noticia1.jpg" alt="Notícia 1" />
-          <h2>Notícia Secundária 1</h2>
-        </article>
-        <article>
-          <img src="img/noticia2.jpg" alt="Notícia 2" />
-          <h2>Notícia Secundária 2</h2>
-        </article>
-      </aside>
-    </section>
+  <div class="content">
+    <h1</h1>
+    <p>Welcome to my web page! Here I will show you a little about one of my hobbies!</p>
 
-    <section class="secao-noticias">
-      <h2>Últimas Notícias</h2>
-      <div class="noticias-lista">
-        <article>
-          <img src="img/thumb1.jpg" alt="Imagem da notícia" />
-          <h3>Título da Notícia</h3>
-          <p>Breve resumo da notícia...</p>
-        </article>
+    <!-- Image Section -->
+    <h2>Photos</h2>
+    <div class="image-container">
+      <figure>
+        <img src="eu.jpeg"">
+        <figcaption>Me doing a solo</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="logo_tuma.jpg" alt="Logo from the musical group of my university">
+        <figcaption>Logo from the musical group of my university</figcaption>
+      </figure>
+    </div>
 
-      </div>
-    </section>
+    <!-- Sound Section -->
+    <h2>Sound</h2>
+    <audio controls>
+      <source src="TUMa -Eterno Amor CD.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <p>This is one of our originals</p>
+    <p>Audio format: MP3, commonly used for streaming.</p>
 
+    <!-- GIF Section -->
+    <h2>GIF Animation</h2>
+    <figure>
+      <img src="gif.gif" alt="This is me training my moves :)">
+      <figcaption>This is me training my moves :)</figcaption>
+    </figure>
 
-    <section class="videos">
-      <h2>Vídeos</h2>
-      <div class="video-galeria">
-        <article>
-          <video controls src="videos/video1.mp4"></video>
-          <h3>Título do Vídeo</h3>
-        </article>
+    <!-- Video Section -->
+    <h2>Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7aQj_ecsWU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>This is a video from one of our performances.</p>
+  </div>
 
-      </div>
-    </section>
-
-
-    <section class="infograficos">
-      <h2>Infográficos</h2>
-      <img src="img/infografico1.png" alt="Infográfico 1" />
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Notícias Hoje - Todos os direitos reservados.</p>
-  </footer>
 </body>
 </html>
