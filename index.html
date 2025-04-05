@@ -1,39 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment-1</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lora&display=swap" rel="stylesheet">
   
-<Style>
+  <style>
     body {
-      font-family: 'MyCustomFont', sans-serif; /* Mantém a fonte personalizada */
+      font-family: 'Roboto', sans-serif;
       background-color: #ffffff; 
-      color: #000000; /* Texto branco*/
+      color: #000000;
       margin: 0;
       padding: 0;
       text-align: center;
     }
 
     h1, h2, p {
-      color: #000000; /* Letras brancas */
+      color: #000000;
     }
 
-
-    /* Título principal */
     h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
 
-    /* Títulos secundários */
     h2 {
       font-size: 1.8em;
       margin-top: 20px;
-      border-bottom: 2px solid #000000; /* Linha abaixo dos títulos */
+      border-bottom: 2px solid #000000;
       padding-bottom: 5px;
     }
 
-    /* Parágrafo de introdução */
     p {
       font-size: 1.2em;
       line-height: 1.6;
@@ -41,28 +39,26 @@
       margin: 20px auto;
     }
 
-    /* Ajuste de imagens lado a lado */
     .image-container {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-      margin-top: 20px;
-      flex-wrap: wrap; /* Para garantir que elas se ajustem em telas menores */
+      margin: 20px 0;
     }
 
     .image-container figure {
-      width: 45%; /* Largura das imagens */
+      width: 300px;
       margin: 0;
-      text-align: center;
-      border-radius: 10px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave nas imagens */
-      background-color: #ffffff; /* Fundo branco para o figure */
+      background-color: #ffffff;
       padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     }
 
     .image-container img {
-      width: 100%; /* As imagens irão ocupar toda a largura do figure */
-      height: auto; /* Mantém a proporção da imagem */
+      width: 100%;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     }
@@ -71,102 +67,86 @@
       margin-top: 10px;
       font-size: 1em;
       font-style: italic;
-      color: #666; /* Cor mais suave para as legendas */
+      color: #666;
     }
 
-    /* Responsividade para quando a tela for mais estreita */
     @media (max-width: 768px) {
       .image-container {
-        flex-direction: column; /* Alinha as imagens em coluna */
+        flex-direction: column;
         align-items: center;
       }
 
       .image-container figure {
-        width: 80%; /* Largura das figuras se a tela for pequena */
+        width: 80%;
       }
     }
 
-    /* Áudio e vídeo */
     audio, iframe {
       display: block;
       margin: 20px auto;
       border-radius: 10px;
     }
 
-    /* Estilo de figuras */
-    figure {
-      margin: 20px auto;
-      text-align: center;
-    }
-
-    /* Estilo do GIF */
     img {
       max-width: 100%;
       height: auto;
       border-radius: 10px;
     }
-
   </style>
 </head>
 <body>
 
   <div class="content">
-    <h1>Elton John 'can't watch sons play rugby' after eyesight loss </h1>
-    <div/>
+    <h1>Elton John 'can't watch sons play rugby' after eyesight loss</h1>
 
     <h2>Photos</h2>
     <div class="image-container">
       <figure>
-        <img src="eltonjohnpic.jgep">
+        <img src="eltonjohnpic.jpeg" alt="Elton John looking emotional">
       </figure>
-      <div/>
-        
-      <p> 
-          Sir Elton John has shared that he's been struggling with his eyesight since an infection last summer, which now prevents him from doing everyday things like watching TV or seeing his sons play rugby and football.
-         -  “I can’t see the television, I can’t read. I can’t watch my boys play rugby and football,” the 78-year-old singer told The Times.
-         - “It’s been a very difficult time because I’m used to taking everything in. It’s distressing,” he added.
-          Back in September, Elton revealed on Instagram that a “serious” infection had left him with “limited vision” in one eye, noting that his recovery “would take time.”
-      </p>
-      <div/>
+    </div>
 
-      <h2>Photos</h2>
+    <p> 
+      Sir Elton John has shared that he's been struggling with his eyesight since an infection last summer, which now prevents him from doing everyday things like watching TV or seeing his sons play rugby and football.  
+      “I can’t see the television, I can’t read. I can’t watch my boys play rugby and football,” the 78-year-old singer told The Times.  
+      “It’s been a very difficult time because I’m used to taking everything in. It’s distressing,” he added.  
+      Back in September, Elton revealed on Instagram that a “serious” infection had left him with “limited vision” in one eye, noting that his recovery “would take time.”
+    </p>
+
+    <h2>Photos</h2>
     <div class="image-container">
       <figure>
-        <img src="instagram.jpeg">
+        <img src="instagram.jpeg" alt="Instagram post by Elton John">
       </figure>
-      <div/>
+    </div>
 
-      <p> 
-        Sir Elton John and his filmmaker husband, David Furnish, have two sons, Zachary and Elijah.
-        The legendary songwriter shared that he “can’t see the telly” and revealed, “I haven’t been able to see anything since last July.”
-        He admitted that the loss of his vision has taken an emotional toll. “I do get emotional about it,” he said.
-        - “But you have to adapt,” he continued. “I’m lucky to have the life I have. I still have my wonderful family, and I can still see a little out of here,” he added, pointing to his left eye.
-        - “So you just say to yourself, get on with it.
-      </p>
-      <div/>
-        
-       <h2>Photos</h2>
+    <p> 
+      Sir Elton John and his filmmaker husband, David Furnish, have two sons, Zachary and Elijah.  
+      He shared that he “can’t see the telly” and revealed, “I haven’t been able to see anything since last July.”  
+      He admitted that the loss of his vision has taken an emotional toll. “I do get emotional about it,” he said.  
+      “But you have to adapt,” he continued. “I’m lucky to have the life I have. I still have my wonderful family, and I can still see a little out of here,” he added, pointing to his left eye.  
+      “So you just say to yourself, get on with it.”
+    </p>
+
+    <h2>Photos</h2>
     <div class="image-container">
       <figure>
-        <img src="eltonjohn.jpg">
+        <img src="eltonjohn.jpg" alt="Elton John performing">
       </figure>
-      <div/>
-        
-      <p>
-        Sir Elton previously shared that his vision problems had prevented him from completing his new album. Back in November, he admitted, “It’s been a while since I’ve done anything.”
-        However, on Friday, he released a new collaborative album with American musician Brandi Carlile titled Who Believes In Angels? The project was created alongside producer Andrew Watt and his longtime songwriting partner Bernie Taupin.
-        Sir Elton noted that the creative process wasn’t always smooth: “We didn’t all agree,” he said, explaining that he grew “frustrated” when others pushed back against his ideas. “If I want to make a great album at 76 or 77, I need to be told the truth — and they put up with my little foibles, which were really about anxiety, self-doubt, and not feeling very well at the time.”
-        At one point, he considered quitting the project. “I was tired, so I thought, I’m going to abandon this,” he said. “The problem was, three other people were involved, and I knew that if I walked away, I would hate myself for the rest of my life.”
-        He added that self-doubt is nothing new in his creative journey: “You wouldn’t be human if you didn’t have fear and doubt. It’s good for artists. Every album I’ve done — good, bad or indifferent — I’ve had doubts about,” he said. “And the most doubts I’ve ever had have been with this one.”
-        Despite his reservations, the album has received strong praise from critics. Lisa Wright of The Guardian gave it four stars, noting its “poignant moments,” while The Telegraph’s Neil McCormick awarded it five stars, calling it a “glorious return to his bombastic, melodious 1970s pomp.”
-        Earlier this year, Elton’s greatest hits compilation Diamonds reached number one on the UK charts after 374 weeks, marking his ninth number-one album. The 51-track collection includes classics such as Tiny Dancer, I’m Still Standing, and Rocket Man.
-        And in another milestone, Sir Elton earned his first Emmy Award last year, completing his EGOT status — a rare achievement for artists who have won an Emmy, Grammy, Oscar, and Tony.
-      </p>
-      <div/>
+    </div>
 
-      <h2>Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=L0b9kam1x7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>
+      Sir Elton previously shared that his vision problems had prevented him from completing his new album. Back in November, he admitted, “It’s been a while since I’ve done anything.”  
+      However, on Friday, he released a new collaborative album with American musician Brandi Carlile titled <strong>Who Believes In Angels?</strong> The project was created alongside producer Andrew Watt and his longtime songwriting partner Bernie Taupin.  
+      Sir Elton noted that the creative process wasn’t always smooth: “We didn’t all agree,” he said, explaining that he grew “frustrated” when others pushed back against his ideas.  
+      “If I want to make a great album at 76 or 77, I need to be told the truth — and they put up with my little foibles, which were really about anxiety, self-doubt, and not feeling very well at the time.”  
+      Despite his doubts, the album has been well received by critics and marks another highlight in his legendary career.
+    </p>
+
+    <h2>Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L0b9kam1x7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   
 </body>
 </html>
+
