@@ -1,0 +1,79 @@
+<html lang="eng">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notícias Hoje</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Notícias Hoje</div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Mundo</a></li>
+        <li><a href="#">Política</a></li>
+        <li><a href="#">Economia</a></li>
+        <li><a href="#">Tecnologia</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Desporto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Destaques -->
+    <section class="destaque">
+      <article class="principal">
+        <img src="img/destaque.jpg" alt="Notícia principal">
+        <h1>Título da Notícia Principal</h1>
+        <p>Resumo da notícia principal com imagem de fundo...</p>
+      </article>
+      <aside class="secundarias">
+        <article>
+          <img src="img/noticia1.jpg" alt="Notícia 1" />
+          <h2>Notícia Secundária 1</h2>
+        </article>
+        <article>
+          <img src="img/noticia2.jpg" alt="Notícia 2" />
+          <h2>Notícia Secundária 2</h2>
+        </article>
+      </aside>
+    </section>
+
+    <section class="secao-noticias">
+      <h2>Últimas Notícias</h2>
+      <div class="noticias-lista">
+        <article>
+          <img src="img/thumb1.jpg" alt="Imagem da notícia" />
+          <h3>Título da Notícia</h3>
+          <p>Breve resumo da notícia...</p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="videos">
+      <h2>Vídeos</h2>
+      <div class="video-galeria">
+        <article>
+          <video controls src="videos/video1.mp4"></video>
+          <h3>Título do Vídeo</h3>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="infograficos">
+      <h2>Infográficos</h2>
+      <img src="img/infografico1.png" alt="Infográfico 1" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Notícias Hoje - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
