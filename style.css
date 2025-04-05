@@ -13,6 +13,25 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.bbc-header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* usa start se quiseres o logo à esquerda */
+}
+
+.bbc-logo span {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 5px 10px;
+  margin-right: 4px;
+  font-size: 20px;
+  display: inline-block;
+}
 
 header .logo {
   font-size: 1.8em;
